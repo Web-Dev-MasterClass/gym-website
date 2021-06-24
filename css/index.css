@@ -1,0 +1,160 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* css variable */
+/* :root{
+    --navbar-height:59px;
+} */
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+
+ 
+}
+
+/* navigation bar: Logo and Image */
+#logo 
+{
+    margin: 5px 8px;
+}
+#logo img{
+    height: 60px;
+    margin: 5px 10px;
+    filter: invert(92%);
+  
+    /* padding: 5px 12px; */
+  
+}
+/* navigation Bar :list styling */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 205%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+}
+#navbar ul li{
+    font-size: 1.3rem;
+    list-style: none;
+    
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color:black;
+   
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 575px;
+    width: 100%;
+
+}
+#home::before{
+    content: "";
+    background: url(../image/gym1.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0;
+    left: 0;
+}
+
+#home h2{
+    color: rgba(0, 0, 0, 0.795);
+    text-align: center;
+    font-family: cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-family:cursive;
+}
+
+#services{
+    margin: 14px;
+    display: flex;
+    
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 15px;
+    background-color: grey;
+   
+    
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto; 
+    filter: brightness(0.5);}
+
+
+.h-primary{
+    font-size: 2.3rem;
+    padding: 12px;
+    color: gold;
+}
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 12px;
+    
+    
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgba(1, 13, 17, 0.808);
+    color: white;
+    margin: 17px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgba(248, 61, 14, 0.233);
+    color: gold;
+}
+.center{
+    text-align: center;
+}
+.foot{
+    background-color: black;
+    color: gold;
+    height: 33px;
+    text-align: center;
+    padding: 8px;
+}
